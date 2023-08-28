@@ -1,75 +1,98 @@
-.table{
-  margin-top: 1rem;
+tr {
+    border: 1px solid black;
 }
 
-.table-data{
-  padding: 10px 10px;
+.table-data {
+    padding: 10px 10px;
 }
 
-.table-data-action{
-  padding: 10px 5px
+.table-data-action {
+    padding: 0px 5px;
 }
 
-.action-layout{
+.action-layout {
     display: flex;
 }
 
-.edit-btn{
+.edit-btn {
+    padding: 6px;
     margin: 0px 4px;
-    width: 75%;
-    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    width: 40%;
+    background-image: linear-gradient(135deg, #e4e8ef 0%, #c3cfe2 100%);
     border-style: none;
-    border-radius: 25px;
+    border-radius: 5px;
     color: rgb(76, 76, 76);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.delete-btn{
+.edit-btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.1s;
+}
+
+.delete-btn {
     margin: 0px 4px;
-    width: 75%;
+    width: 40%;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     border-style: none;
-    border-radius: 25px;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.delete-selected-btn{
+.delete-btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.1s;
+}
+
+.delete-selected-btn {
     margin: 0px 4px;
-    padding: 5px;
-    width: 120px;
+    padding: 6px;
+    width: 8%;
     background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
     border-style: none;
-    border-radius: 25px;
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
-.checkbox{
-  cursor: pointer;
+.delete-selected-btn:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.1s;
 }
 
-.checkbox:active{
-  cursor: pointer;
-  background-color: gray;
-  z-index: 1 !important;
+.checkbox {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
 }
 
-.table-card{
-  padding: 10px;
-  background-color: #c3cfe2;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
-  border-radius: 10px;
+.checkbox-active {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: "none";
+    background-color: #d4e0e7;
+    z-index: 1 !important;
 }
 
-@media only screen and (max-width: 900px){
-  .table{
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-    scroll-behavior: smooth;
-  }
+.table-card {
+    height: auto;
+    padding: 10px;
+    background-color: rgb(241, 246, 249);
+    backdrop-filter: blur(15px);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
 }

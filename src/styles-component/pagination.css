@@ -2,14 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .pagination-button{
   padding: 21px;
   width: 10px;
   height: 10px;
-  background-color: rgb(234, 234, 234);
+  background-color: rgb(229, 234, 237);
   border: none;
   border-radius: 82px;
   display: flex;
@@ -19,14 +19,19 @@
   cursor: pointer;
 }
 
-.pagination-button:active {
-  color: white;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%) !important;
+.pagination-button-active {
+  background-color: rgb(119, 118, 118);
+  color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, rgb(57, 72, 103) 120%);
+  transform: scale(1.1);
 }
 
 .pagination-button:hover {
   background-color: rgb(119, 118, 118);
-  color: rgb(67, 67, 67);
+  color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.2) 0px 6px 15px;
-  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, rgb(57, 72, 103) 120%);
+  transform: scale(1.1);
+  transition: ease-in-out .1s;
 }

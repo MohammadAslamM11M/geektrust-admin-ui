@@ -54,6 +54,16 @@ const Table = () => {
             setCurrPage(currPage + 1);
         }
     };
+    const veryLastPage = () => {
+        if (currPage !== numOfPages) {
+            setCurrPage(numOfPages);
+        }
+    };
+    const veryFirstPage = () => {
+        if (currPage !== 1) {
+            setCurrPage(1);
+        }
+    };
 
     const handleCheck = (e, ele) => {
         let ppllist = [...userDetails];
@@ -112,7 +122,7 @@ const Table = () => {
             <div className="table-card">
                 <Search userDetails={userDetails} changeSearch={handleSearch} />
                 <div className="container">
-                    <table className="table" style={{ width: "100%" }}>
+                    <table className="table" style={{ width: "100%", border: "none" }}>
                         <thead>
                             <tr className="table-row">
                                 <th className="table-data">
@@ -141,7 +151,7 @@ const Table = () => {
                                 })
                                 .map((detail) => {
                                     return (
-                                        <tr key={detail.id}>
+                                        <tr key={detail.id} className={detail?.isChecked ? `checkbox-active` : ``}>
                                             <td className="table-data">
                                                 <input
                                                     className={detail?.isChecked ? `active` : `checkbox`}
@@ -185,6 +195,8 @@ const Table = () => {
                         changePrev={prevPage}
                         changeCurr={changeCurrPage}
                         changeNext={nextPage}
+                        changeVeryFirst={veryFirstPage}
+                        changeVeryLast={veryLastPage}
                     />
                 </div>
             </div>
