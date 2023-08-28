@@ -10,7 +10,7 @@
     text-align: left;
     border-radius: 10px;
     z-index: 1;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 27px -6px, rgba(0, 0, 0, 0.3) 0px 9px 16px -9px;
     backdrop-filter: blur(8px);
 }
 
@@ -43,7 +43,7 @@
     border-radius: 5px;
     color: rgb(255, 255, 255);
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 13px;
     font-size: 16px;
 }
 
@@ -61,7 +61,7 @@
     border-radius: 5px;
     color: rgb(76, 76, 76);
     cursor: pointer;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 13px;
     font-size: 16px;
     transform: scale(1.8, smooth);
     transition: ease-in-out 0.1s;
